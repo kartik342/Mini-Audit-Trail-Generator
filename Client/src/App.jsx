@@ -10,7 +10,7 @@ function App() {
   // function to save-version
   const saveVersion = async () => {
       try {
-          const response = await fetch("http://localhost:5000/save-version", {
+          const response = await fetch("https://mini-audit-trail-generator-backend-735i.onrender.com/save-version", {
           method: "POST",
           headers: { "Content-Type": "application/json" },
           body: JSON.stringify({ text }),
@@ -31,7 +31,7 @@ function App() {
   // function to get all version
   const fetchVersions = async () => {
       try {
-        const res = await fetch("http://localhost:5000/versions");
+        const res = await fetch("https://mini-audit-trail-generator-backend-735i.onrender.com/versions");
         const data = await res.json();
         setVersions(data);
       } 
@@ -42,7 +42,7 @@ function App() {
 
   const clearHistory = async () => {
       try {
-        await fetch("http://localhost:5000/clear-history", {
+        await fetch("https://mini-audit-trail-generator-backend-735i.onrender.com/clear-history", {
           method: "DELETE"
         });
 
