@@ -1,0 +1,9 @@
+* {
+  font-family: 'Consolas', 'Courier New', monospace;
+}
+
+textarea {
+  line-height: 1.2;
+  white-space: pre-wrap;
+}
+
